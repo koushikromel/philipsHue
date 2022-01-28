@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  Hello
+  {{a}}
+  <br> <br>
+  <!-- <input type="submit" value="ON"> <br> <br>
+
+  <input type="submit" value="OFF"> <br> <br> -->
+  <form action="br" method="post">
+    Brightness:
+    <input type="range" name="br" id="br" min="0" max="256" onchange="myBri()">
+  </form>
+  <form action="/aksddfhn" method="post">
+    Hue:
+    <input type="range" name="hue" id="hue" min="0" max="60000"
+      onchange="myHue()">
+  </form>
+  <!-- <form action="/" , method="post">
+    {% csrf_token %}
+    <input type="text" name="r">
+    <input type="submit"> 
+  </form> -->
+  <script>
+    function myBri() {
+      // console.log('hello');
+      s = document.getElementById('br').value.submit();
+      console.log(s);
+      // s.submit();
+      // ss = s.save()
+    }
+    function myHue() {
+      document.getElementById('hue').value
+      // console.log(a);
+
+    }
+
+  </script>
+</body>
+
+</html>
